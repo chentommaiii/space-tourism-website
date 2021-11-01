@@ -1,0 +1,30 @@
+.btn {
+  text-decoration: none;
+}
+
+.btn--large {
+  position: relative;
+  padding: 0 2em;
+  display: inline-grid;
+  place-items: center;
+  aspect-ratio: 1;
+  border: none;
+  border-radius: 50%;
+}
+
+.btn--large::after {
+  position: absolute;
+  content: "";
+  background-color: hsla(var(--clr-white) / 0.2);
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.3s linear;
+}
+
+.btn--large:hover::after {
+  cursor: pointer;
+  transform: scale(1.5);
+  opacity: 1;
+}

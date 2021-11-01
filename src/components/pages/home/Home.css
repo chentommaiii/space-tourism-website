@@ -1,0 +1,27 @@
+.home-page {
+  background-image: url("../../../assets/home/background-home-mobile.jpg");
+  /* Center and scale the image nicely */
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 600px) {
+  .home-page {
+    background-image: url("../../../assets/home/background-home-tablet.jpg");
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .home-page {
+    background-image: url("../../../assets/home/background-home-desktop.jpg");
+  }
+
+  .home-intro-container {
+    justify-self: start;
+  }
+
+  .grid-container--home .btn {
+    justify-self: end;
+  }
+}

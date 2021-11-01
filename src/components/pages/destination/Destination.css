@@ -1,0 +1,82 @@
+.destination-page {
+  background-image: url("../../../assets/destination/background-destination-mobile.jpg");
+  /* Center and scale the image nicely */
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.img-planet {
+  width: 50%;
+  aspect-ratio: 1;
+  margin-inline: auto;
+  margin-block: 1.5rem;
+}
+
+.dest-intro-container {
+  padding-block: 2rem;
+  border-bottom: 2px solid hsl(var(--clr-light) / 0.2);
+}
+
+.dest-info-container {
+  padding-block: 2rem;
+}
+
+.dest-info-container > *:where(:not(:first-child)) {
+  margin-left: 0;
+  margin-top: 1rem;
+}
+
+.dest-info-item span {
+  font-size: 1.75rem;
+  line-height: 3rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .destination-page {
+    background-image: url("../../../assets/destination/background-destination-tablet.jpg");
+  }
+
+  .img-planet {
+    width: 18rem;
+  }
+
+  .dest-info-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .dest-info-container > *:where(:not(:first-child)) {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .destination-page {
+    background-image: url("../../../assets/destination/background-destination-desktop.jpg");
+  }
+
+  .img-planet {
+    width: 30vw;
+  }
+
+  .dest-intro-container {
+    padding-bottom: 4rem;
+  }
+
+  .dest-intro-container p {
+    margin-top: 1rem;
+    min-height: 7rem;
+  }
+
+  .dest-info-container {
+    justify-content: unset;
+  }
+
+  .dest-info-container > *:where(:not(:first-child)) {
+    margin-left: 5rem;
+    margin-top: 0;
+  }
+}
