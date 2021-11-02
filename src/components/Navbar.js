@@ -25,20 +25,9 @@ const Navbar = () => {
         }
     }
 
-    // const selectPage = () => {
-    //     // Highlight checkbox when selected
-    //     for (var i = 0; i < $(".nav-links").length; i++){
-    //         $(".nav-links:eq(" + i + ")").on("click", function() {
-    //             $(".nav-item").removeClass("active")
-    //             $(this).parent().addClass("active");
-    //         });
-    //     }
-    // }
-
     // Call function during first render => useEffect
     useEffect(() => {
         checkScreenSize()
-        // selectPage()
     }, [])
 
     window.addEventListener('resize', checkScreenSize)
@@ -54,8 +43,8 @@ const Navbar = () => {
                     </Link>
                     <div className="menu-icon" onClick={onClick}>
                         <div className={click ? 'menu-open' : 'menu-close'}>
-                            <img className="close-icon" src="../assets/shared/icon-close.svg" alt="close-icon" />
-                            <img className="burger-icon" src="../assets/shared/icon-hamburger.svg" alt="burger-icon" />
+                            <img className="close-icon" src="./assets/shared/icon-close.svg" alt="close-icon" />
+                            <img className="burger-icon" src="./assets/shared/icon-hamburger.svg" alt="burger-icon" />
                         </div>
                     </div>
                     {desktop && <div className="nav-line-deco"></div>}
