@@ -8,7 +8,7 @@ import Technology from './components/pages/technology/Technology';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/space-tourism-website">
       <Header />
       <Switch>
         <Route path="/" exact component={Home} />
