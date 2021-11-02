@@ -5,6 +5,7 @@ import DotIndicator from '../../DotIndicator'
 import {useState, useEffect} from 'react'
 import $ from 'jquery'
 import axios from 'axios'
+import {Helmet} from 'react-helmet'
 
 const Crew = () => {
     const [post, setPost] = useState(null)
@@ -36,20 +37,25 @@ const Crew = () => {
     if (!post) return null;
 
     return (
-        <div className="grid-container grid-container--crew">
-            <h5 className="numbered-title"><span>02</span>Meet your crew</h5>
-            <div className="crew-intro-container flow">
-                <div>
-                    <h2 className="ff-serif fs-600 uppercase text-semi-trans">{post.crew[tab].role}</h2>
-                    <h1 className="ff-serif fs-subtitle uppercase text-white">{post.crew[tab].name}</h1>
+        <>
+            <Helmet>
+                <title>Space Tourism | Crew</title>
+            </Helmet>
+            <div className="grid-container grid-container--crew">
+                <h5 className="numbered-title"><span>02</span>Meet your crew</h5>
+                <div className="crew-intro-container flow">
+                    <div>
+                        <h2 className="ff-serif fs-600 uppercase text-semi-trans">{post.crew[tab].role}</h2>
+                        <h1 className="ff-serif fs-subtitle uppercase text-white">{post.crew[tab].name}</h1>
+                    </div>
+                    <p>{post.crew[tab].bio}</p>
                 </div>
-                <p>{post.crew[tab].bio}</p>
+                <DotIndicator dotIndicatorStyle="dot-indicator--crew" updateTab={updateTab} />
+                <div className="img-crew">
+                    <img src={post.crew[tab].images.png} alt="Crew" />
+                </div>
             </div>
-            <DotIndicator dotIndicatorStyle="dot-indicator--crew" updateTab={updateTab} />
-            <div className="img-crew">
-                <img src={post.crew[tab].images.png} alt="Crew" />
-            </div>
-        </div>
+        </>
     )
 }
 
