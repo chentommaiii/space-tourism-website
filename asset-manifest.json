@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/space-tourism-website/static/css/main.7b1bcb54.chunk.css",
+    "main.js": "/space-tourism-website/static/js/main.7dc76fbb.chunk.js",
+    "main.js.map": "/space-tourism-website/static/js/main.7dc76fbb.chunk.js.map",
+    "runtime-main.js": "/space-tourism-website/static/js/runtime-main.dbf7ec00.js",
+    "runtime-main.js.map": "/space-tourism-website/static/js/runtime-main.dbf7ec00.js.map",
+    "static/js/2.a7cf2785.chunk.js": "/space-tourism-website/static/js/2.a7cf2785.chunk.js",
+    "static/js/2.a7cf2785.chunk.js.map": "/space-tourism-website/static/js/2.a7cf2785.chunk.js.map",
+    "static/js/3.209b4eab.chunk.js": "/space-tourism-website/static/js/3.209b4eab.chunk.js",
+    "static/js/3.209b4eab.chunk.js.map": "/space-tourism-website/static/js/3.209b4eab.chunk.js.map",
+    "index.html": "/space-tourism-website/index.html",
+    "static/css/main.7b1bcb54.chunk.css.map": "/space-tourism-website/static/css/main.7b1bcb54.chunk.css.map",
+    "static/js/2.a7cf2785.chunk.js.LICENSE.txt": "/space-tourism-website/static/js/2.a7cf2785.chunk.js.LICENSE.txt",
+    "static/media/Crew.css": "/space-tourism-website/static/media/background-crew-tablet.16d51cf6.jpg",
+    "static/media/Destination.css": "/space-tourism-website/static/media/background-destination-tablet.8f55d346.jpg",
+    "static/media/Home.css": "/space-tourism-website/static/media/background-home-tablet.bc9efcc3.jpg",
+    "static/media/Technology.css": "/space-tourism-website/static/media/background-technology-tablet.48c38b02.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dbf7ec00.js",
+    "static/js/2.a7cf2785.chunk.js",
+    "static/css/main.7b1bcb54.chunk.css",
+    "static/js/main.7dc76fbb.chunk.js"
+  ]
+}
