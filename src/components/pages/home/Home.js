@@ -4,6 +4,7 @@ import "./Home.css"
 import Button from '../../Button'
 import {useEffect} from 'react'
 import $ from 'jquery'
+import { Helmet, HelmetProvider } from 'react-helmet-async'
 
 const Home = () => {
 
@@ -23,7 +24,10 @@ const Home = () => {
     }, [])
 
     return (
-        <>
+        <HelmetProvider>
+            <Helmet>
+                <title>Space Toursim | Home</title>
+            </Helmet>
             <div className="grid-container grid-container--home">
                     <div className="home-intro-container flow">
                         <h1 className="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">So, you want to travel to
@@ -34,9 +38,9 @@ const Home = () => {
                             and relax because we’ll give you a truly 
                             out of this world experience!</p>
                     </div>
-                    <Button path="/" text="Explore" buttonStyle="btn--large" resourceClass="uppercase ff-serif fs-600 text-dark bg-white" />
+                    <Button path="/destination" text="Explore" buttonStyle="btn--large" resourceClass="uppercase ff-serif fs-600 text-dark bg-white" />
             </div>
-        </>
+        </HelmetProvider>
     )
 }
 

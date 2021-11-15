@@ -5,6 +5,7 @@ import TabList from '../../TabList'
 import {useState,useEffect} from 'react'
 import $ from 'jquery'
 import axios from "axios";
+import { Helmet, HelmetProvider } from 'react-helmet-async'
 
 const Destination = () => {
     const [post, setPost] = useState(null)
@@ -36,7 +37,10 @@ const Destination = () => {
     if (!post) return null;
 
     return (
-    <div>
+    <HelmetProvider>
+        <Helmet>
+            <title>Space Tourism | Destinations</title>
+        </Helmet>
         <div className="grid-container grid-container--destination">
             <div>
                 <h2 className="numbered-title"><span>01</span>Pick your destination</h2>
@@ -61,7 +65,7 @@ const Destination = () => {
             </div>
 
         </div>
-    </div>
+    </HelmetProvider>
     )
 }
 

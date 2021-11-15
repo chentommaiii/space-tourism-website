@@ -10,6 +10,7 @@
   aspect-ratio: 1;
   border: none;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .btn--large::after {
@@ -24,7 +25,6 @@
 }
 
 .btn--large:hover::after {
-  cursor: pointer;
   transform: scale(1.5);
   opacity: 1;
 }

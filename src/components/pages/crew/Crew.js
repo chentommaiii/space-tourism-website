@@ -4,8 +4,8 @@ import "./Crew.css"
 import DotIndicator from '../../DotIndicator'
 import {useState, useEffect} from 'react'
 import $ from 'jquery'
+import { Helmet, HelmetProvider } from 'react-helmet-async'
 import axios from 'axios'
-import {Helmet} from 'react-helmet'
 
 const Crew = () => {
     const [post, setPost] = useState(null)
@@ -29,7 +29,7 @@ const Crew = () => {
     useEffect(() => {
         setCrewPage()
         axios.get('data.json').then((response) => {
-            console.log(response.data)
+            // console.log(response.data)
             setPost(response.data)
           });
     }, [])
@@ -37,7 +37,7 @@ const Crew = () => {
     if (!post) return null;
 
     return (
-        <>
+        <HelmetProvider>
             <Helmet>
                 <title>Space Tourism | Crew</title>
             </Helmet>
@@ -55,7 +55,7 @@ const Crew = () => {
                     <img src={post.crew[tab].images.png} alt="Crew" />
                 </div>
             </div>
-        </>
+        </HelmetProvider>
     )
 }
 
