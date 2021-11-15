@@ -7,7 +7,8 @@
   padding: 0 2em;
   display: inline-grid;
   place-items: center;
-  aspect-ratio: 1;
+  height: 8em;
+  width: 8em;
   border: none;
   border-radius: 50%;
   cursor: pointer;
